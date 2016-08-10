@@ -1,0 +1,60 @@
+---
+layout: posts
+title: false
+generator: pagination
+page_type: home
+pagination:
+max_per_page: 1
+use:
+- projects
+---
+{% block content %}
+
+<div class="intro important">
+    <p>
+        Hi, my name is <a href="{{ site.url }}" rel="me">Asmir Mustafic</a>,
+        on the web I use <a href="https://github.com/{{ site.github }}" rel="me"
+                             title="{{ site.myname }} github profile" target="_blank">goetas</a> as nickname.
+        I'm a <a href="https://en.wikipedia.org/wiki/Software_engineer" target="_blank">software engineer</a>
+        and a passionate supporter of <a href="https://en.wikipedia.org/wiki/Open-source_software" target="_blank">open source</a>.
+    </p>
+    <p>
+        You can read more <a href="{{ site.url }}/about">about</a> me
+        and have a look to my <a href="{{ site.url }}/services">services</a> page to see what is my job about.
+
+    </p>
+    <p>
+        From time to time I <a href="{{ site.url }}/blog">blog</a> about PHP and IT related topics.
+    </p>
+    <p>
+        Visiting the <a href="{{ site.url }}/projects/categories/code">code</a>
+        and <a href="{{ site.url }}/projects/categories/web">web</a>
+        pages you can get an idea of the projects that I'm working on.
+    </p>
+</div>
+
+<p class="text-center remove-margin">
+    <img src="{{ site.url }}/img/separator.png" alt=""/>
+</p>
+
+<div class="container home-sections">
+    <div class="item">
+        <div class="twitter-stream">
+            <a data-show-replies="false" data-chrome="nofooter noheader noscrollbar" data-tweet-limit="1"
+               class="twitter-timeline" href="https://twitter.com/{{ site.twitter }}">Tweets by {{ site.twitter }}</a>
+            <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+    </div>
+    <div class="item">
+        <div class="github-card" data-github="goetas" data-width="400" data-height="" data-theme="default"></div>
+        <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
+    </div>
+    <p class="text-center remove-margin">
+        <img src="{{ site.url }}/img/separator.png" alt=""/>
+    </p>
+</div>
+
+<div class="blog-item">
+    {{parent()}}
+</div>
+{% endblock %}

@@ -1,0 +1,439 @@
+body {
+    padding: 0;
+    margin: 0;
+    color: #000;
+    background-image: linear-gradient(rgb(255, 255, 255) 0%, rgb(237, 239, 243) 100%), linear-gradient(to bottom, #fff 0%, #edeff3 100%);
+    background-repeat: no-repeat;
+}
+body .content-wrap{
+    border-top: 18px solid #0A4958;
+}
+p {
+    margin: 25px 0 25px
+}
+
+a {
+    color: #01B6AD;
+}
+
+.remove-margin {
+    margin: 0;
+}
+
+.remove-padding {
+    padding: 0;
+}
+
+.icon-list {
+    width: 245px;
+    background: none;
+}
+
+.display {
+    display: block !important;
+}
+
+.morph-shape {
+    background-color: #064856;
+}
+@media (min-width: 960px) {
+    .morph-shape {
+        background-color: #064856; /* Old browsers */
+    }
+    .menu-wrap {
+        display: block !important;
+    }
+    .content-wrap{
+        position: relative;
+        z-index: 1000
+    }
+
+    .content-wrap .content::before {
+        content: '';
+        display: none;
+    }
+}
+.show-menu .morph-shape {
+    background-color: #373a47;
+}
+
+
+.menu-wrap {
+    float: right;
+    width: 20%;
+}
+
+
+
+.top h1, .top h2 {
+    font-size: 70px;
+    padding-top: 36px;
+    color:  #0A4958;
+}
+
+a.credits {
+    position: fixed;
+    bottom: 1em;
+    font-size: 0.9em;
+}
+a.credits  i.fa{
+    font-size: 1em;
+}
+
+.fork{
+    clear:both;
+    text-align: center;
+    margin-top: 1em;
+    colo:#999;
+}
+
+.row-fluid h2 {
+    color:  #0A4958;
+    border-bottom: 1px solid #0A4958;
+    margin-top: 30px;
+}
+
+.row-fluid h3 {
+    color:  #0A4958;
+    border-bottom: 1px dotted #0A4958;
+    background-repeat: no-repeat;
+    background-position-y: 25px;
+    margin-top: 30px;
+}
+
+h1 a, .top h2 a {
+    color: #CCC;
+}
+
+h1 a:hover, .top h2 a:hover {
+    color: #999;
+    text-decoration: none;
+}
+
+h1 span, .top h2 span {
+    display: block;
+    font-size: 20px;
+    color: #D4B385;
+    margin-top: 0.3em;
+}
+
+.no-decoration, .no-decoration li {
+    list-style: none;
+}
+
+/* Menu */
+.nav {
+    list-style: none;
+    padding: 0;
+}
+
+.nav a {
+    text-decoration: none;
+}
+
+.nav li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+/* Container content */
+.row-fluid {
+    width: 90% !important;
+    margin: 0 auto;
+}
+
+/* Intro */
+.intro {
+    text-align: center;
+}
+
+/* Main structure */
+
+.content-wrap {
+    margin: 0 auto;
+    width: 80%;
+    float: right;
+}
+
+.content {
+    max-width: 850px;
+}
+
+.top {
+    margin: 0 auto;
+}
+
+.main-navigator {
+    text-align: center
+}
+
+.main-navigator a {
+    color: #FFFFFF;
+    font-size: 20px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.main-navigator a:hover {
+    background-color: #0297AF;
+    color: #000000;
+}
+
+/* Abstracts */
+.clear {
+    clear: both;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.item {
+    width: 50%;
+    padding: 1.5%;
+    float: left;
+}
+
+.margin-top-30 {
+    margin-top: 30px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.item:hover {
+    background: #f1f1f1;
+}
+
+.item .links div {
+    width: 25%;
+    font-size: 12px;
+    float: left;
+}
+
+.align-center {
+    border-bottom: 1px dashed #AAA;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.logo {
+    text-align: center;
+}
+
+.logo img {
+    padding-top: 100px;
+    margin: 0 auto;
+}
+
+p.description {
+    font-family: 'Times New Roman';
+    font-style: italic;
+    font-size: 20px;
+    padding-top: 20px
+}
+
+article {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px dashed #AAA;
+    max-width: 850px;
+}
+article footer{
+    clear: both;
+}
+article footer .tecnologies{
+    text-align: right;
+}
+
+
+article h2 a {
+    text-decoration: none;
+    color: #328CFF
+}
+
+h4 small {
+    display: block;
+    font-size: 60%;
+    color: #888;
+}
+
+footer.container {
+    max-width: 900px;
+}
+
+footer.container {
+    margin-top: 30px;
+    padding: 30px 0;
+    border-top: 1px dashed #aaa;
+}
+
+@media (max-width: 767px) {
+    #shield-container {
+        display: none;
+    }
+
+    .show-menu .menu-wrap {
+        width: 60% !important;
+    }
+
+    .item {
+        width: 97%;
+        padding: 1.5%;
+        float: left;
+    }
+    .twitter-stream {
+        display: none;
+    }
+    .top h1, .top h2 {
+        font-size: 55px;
+    }
+    h3 {
+        line-height: inherit;
+    }
+    h2 span {
+        line-height: 1em;
+    }
+
+    .content-wrap {
+        width: 100%;
+        float: none;
+    }
+
+    article.overview p img.thumb {
+        display: none!important;
+    }
+    .home-sections{
+        display: none;
+    }
+
+    .span4.tecnologies{
+        text-align: left;
+        float: none;
+    }
+}
+.home-sections .item.blog-item{
+    width: 97%;
+    display: block!important;
+}
+
+.menu{
+    overflow: hidden;
+    height: 100%;
+}
+
+@media (min-width: 900px) {
+
+    .content-wrap {
+        width: 80%;
+    }
+    .menu-button, .close-button {
+        display: none;
+    }
+
+    .menu-wrap,
+    .content::before {
+        -webkit-transition-delay: 0s;
+        transition-delay: 0s;
+    }
+
+    .menu-wrap,
+    .menu,
+    .close-button,
+    .morph-shape,
+    .content::before {
+        opacity: 1;
+        -webkit-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+    }
+}
+
+.intro {
+    margin: 1em auto;
+    text-align: center;
+}
+.important {
+    font-size: 18px;
+}
+.latest-blog{
+    margin-bottom: -30px;
+}
+
+pre code {
+    background-color: inherit;
+}
+
+.logo-cont {
+    height: 100px;
+}
+
+.logo-cont canvas {
+    z-index: 2;
+    pointer-events: none;
+    background: transparent;
+}
+
+.social-media {
+    padding-left: 31%;
+}
+
+.social-media a {
+    float: left;
+    width: 3%;
+    list-style: none;
+}
+
+.sidebar a.github, .sidebar a.twitter, .sidebar a.github:hover, .sidebar a.twitter:hover {
+    color: rgba(0, 0, 0, 0);
+    background-position: center;
+}
+
+article.overview header .side-title{
+    float: right;
+}
+
+article.overview .role{
+    font-size: small;
+    font-weight: normal;
+    background-color: lightgray;
+    padding: 3px;
+    border-radius: 6px;
+}
+
+a.code-link.github-code{
+    color: black;
+}
+
+a.code-link.github-code{
+    color: black;
+}
+
+.sub-menu a{
+    font-size: 0.9em;
+    padding: 0.3em 0.8em;
+}
+.sub-menu a i.fa.fa-fw{
+    font-size: 1em;
+}
+
+.sub-menu{
+    margin-left: 1em;
+}
+
+article.overview p {
+    margin-top: 0;
+}
+
+article.overview p img.thumb {
+    float: right;
+    display: block;
+    max-width:140px;
+    max-height:140px;
+    width: auto;
+    height: auto;
+}

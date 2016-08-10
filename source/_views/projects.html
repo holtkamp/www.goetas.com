@@ -1,0 +1,81 @@
+{% extends "default" %}
+{% block content %}
+{% for project in page.pagination.items %}
+<article class="overview">
+    <header>
+        <h3>
+
+            <a href="{{ site.url }}{{ project.url }}">{{ project.title }}</a>
+
+
+            <span class="side-title">
+
+            {% if project.github %}
+            <a class="code-link github-code" href="{{ project.github }}" target="_blank"><i class="fa fa-fw fa-github"></i></a>
+            {% elseif project.link %}
+            <a class="code-link github-code" href="{{ project.link }}" target="_blank"><i class="fa fa-fw fa-globe"></i></a>
+            {% endif %}
+            </span>
+        </h3>
+    </header>
+    <p>
+        {% if project.thumb %}
+
+        <img class="thumb" src="{{ site.url }}{{ project.thumb }}">
+        {% endif %}
+        {% if project.description %}
+        {{ project.description }}
+        {% else %}
+        {{ project.summary }}
+        {% endif %}
+
+
+    </p>
+    {% if project.role %}
+    <span class="role"><b>role:</b> {{ project.role }}</span>
+    {% endif %}
+    <footer class="small">
+        {% if project.meta.tags %}
+        <div class="span8">
+            <small class="tags">
+                <i class="icon-tag"></i>
+                {% for tag in project.meta.tags %}
+                <a href="{{ site.url }}/projects/tags/{{ tag|url_encode(true) }}/">{{ tag }}</a>{% if not loop.last %}, {% endif %}
+                {% endfor %}
+
+            </small>
+        </div>
+        {% endif %}
+
+        {% if project.tecnologies %}
+        <div class="span4 tecnologies">
+            <small class="tags">
+                <i class="icon-cog"></i>
+                {% for tag in project.tecnologies %}
+                {% if loop.index<=4 %}{{ tag }}{% if not loop.last and loop.index<4 %}, {% endif %}{% endif %}
+                {% endfor %}
+
+            </small>
+        </div>
+        {% endif %}
+        {#
+        -
+        # comments
+        #}
+    </footer>
+</article>
+{% endfor %}
+
+<div>
+    {% if page.pagination.previous_page or page.pagination.next_page %}
+    <nav class="article clearfix top30">
+        {% if page.pagination.previous_page %}
+        <a class="left btn previous" href="{{ site.url }}{{ page.pagination.previous_page.url }}" title="Previous Page"><span class="title">Previous Page</span></a>
+        {% endif %}
+        {% if page.pagination.next_page %}
+        <a class="right btn next" href="{{ site.url }}{{ page.pagination.next_page.url }}" title="Next Page"><span class="title">Next Page</span></a>
+        {% endif %}
+    </nav>
+    {% endif %}
+</div>
+{% endblock %}

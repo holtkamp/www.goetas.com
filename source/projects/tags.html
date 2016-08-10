@@ -1,0 +1,13 @@
+---
+layout: default
+title: Tags
+use:
+    - projects_tags
+---
+<h2>Project Tags</h2>
+
+<div>
+{% for tag,posts in data.projects_tags %}
+    <a href="{{ site.url }}/projects/tags/{{ tag|url_encode(true) }}">{{ tag }}</a>{% if not loop.last %}, {% endif %}
+{% endfor %}
+</div>

@@ -1,0 +1,12 @@
+---
+layout: projects
+title: Projects
+generator: pagination
+pagination:
+    provider: data.projects
+use:
+    - posts
+---
+{% block title %}{{ parent() }}{% endblock %}
+{% block content %}{{ parent() }}{% endblock %}
+

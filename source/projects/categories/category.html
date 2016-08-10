@@ -1,0 +1,16 @@
+---
+layout: projects
+title: Asmir Mustafic
+generator: [projects_category_index, pagination]
+pagination:
+    provider: page.category_projects
+
+---
+{% block title %}{{ page.category |capitalize }} Projects - {{ page.title }}{% endblock %}
+{% block content %}
+<h2>{{ page.category |capitalize }} Projects</h2>
+
+Here you can find some {{ page.category }} projects that I'm working on or have worked in the past.
+
+{{ parent() }}
+{% endblock %}
