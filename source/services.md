@@ -69,7 +69,7 @@ Some ares where I can help you to establish the right workflows are:
 
 ### Teaching 
 
-If you are planning to use (or already using) some <a href="{{ site.url }}/tecnologies">technologies</a> that  is not 
+If you are planning to use (or already using) some <a href="{{ site.url }}/technologies">technologies</a> that  is not 
 yet well known to your team or if you have some advanced topics that you are interested to leverage faster, 
 I can introduce it to your company. 
 Speeding up the development process and avoiding obvious mistakes
