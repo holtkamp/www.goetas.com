@@ -27,7 +27,7 @@ In the last year (or two) it appeared that JMS Serializer was not really well ma
 the feedback loop was really long (some PR took 3 years to be merged or closed),
 the PR count was about 200 and the issue count was more than 300.
 The first thing I did was going trough the long list of issues and pull requests, 
-closing what was not valid anymore (some were 4 years old), finding or closing duplicates, 
+closing what was not valid anymore (some were 3 years old), finding or closing duplicates, 
 asking for feedback and merging what was good to merge.
 
 This was not an easy process, often PR were really old, but some authors 
@@ -38,7 +38,9 @@ But this was to me, a know consequence of my work, so I continued to do my job.
 
 
 Now after almost 30 days, we had two releases, with more than merged pull requests.
-The new PR count is around 60, now the number of open issues decreased to ~200.
+The new PR count is around 60, now the number of open issues decreased to ~200
+ and I have started using ghthub milestones to track the release process 
+ and what to expect for the next releases.
 Was also really cool to see some appreciation from authors (contributors via PR to the project)
 for the new "life" activity of the project.
 
