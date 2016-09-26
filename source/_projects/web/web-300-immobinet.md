@@ -4,7 +4,7 @@ title: www.immobinet.it
 slug: immobinet
 categories: ["web"]
 tags: ["php", "postgres","symfony"]
-tecnologies: ["php", "apache", "postgres", "redis", "symfony"]
+technologies: ["php", "apache", "postgres", "redis", "symfony"]
 published: true
 year: 2015
 role: tech-lead/product-lead

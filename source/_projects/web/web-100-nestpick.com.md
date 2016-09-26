@@ -4,7 +4,7 @@ title: www.nestpick.com
 slug: nestpick_com
 categories: ["applications", "web"]
 tags: ["php", "zend","symfony"]
-tecnologies: ["php", "nginx", "mysql", "aws", "redis", "yii", "react", "symfony"]
+technologies: ["php", "nginx", "mysql", "aws", "redis", "yii", "react", "symfony"]
 published: true
 year: 2015
 role: tech-lead

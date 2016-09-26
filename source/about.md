@@ -34,7 +34,7 @@ title: About me
          
          <br/>
          To know more about my skills and abilities you can have a look at 
-         <a  href="{{ site.url }}/tecnologies">tecnologies</a> I'm familiar with.
+         <a  href="{{ site.url }}/technologies">technologies</a> I'm familiar with.
     </p>
 
     <p>

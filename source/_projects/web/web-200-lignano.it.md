@@ -4,7 +4,7 @@ title: www.lignano.it
 slug: lignano_it
 categories: ["applications", "web"]
 tags: ["php", "xml", "twig", "template-engine", "symfony"]
-tecnologies: ["php", "apache", "postgres", "redis"]
+technologies: ["php", "apache", "postgres", "redis"]
 published: true
 role: tech-lead/product-lead
 description: A booking.com competitor for hotel and apartment reservations. 

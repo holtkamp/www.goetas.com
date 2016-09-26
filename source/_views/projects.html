@@ -47,11 +47,11 @@
         </div>
         {% endif %}
 
-        {% if project.tecnologies %}
-        <div class="span4 tecnologies">
+        {% if project.technologies %}
+        <div class="span4 technologies">
             <small class="tags">
                 <i class="icon-cog"></i>
-                {% for tag in project.tecnologies %}
+                {% for tag in project.technologies %}
                 {% if loop.index<=4 %}{{ tag }}{% if not loop.last and loop.index<4 %}, {% endif %}{% endif %}
                 {% endfor %}
 

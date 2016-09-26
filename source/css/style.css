@@ -247,7 +247,7 @@ article {
 article footer{
     clear: both;
 }
-article footer .tecnologies{
+article footer .technologies{
     text-align: right;
 }
 
@@ -312,7 +312,7 @@ footer.container {
         display: none;
     }
 
-    .span4.tecnologies{
+    .span4.technologies{
         text-align: left;
         float: none;
     }
