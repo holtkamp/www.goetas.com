@@ -6,8 +6,7 @@ dependencies:
     cache_directories:
         - "~/.composer"
     override:
-        - composer install:
-
+        - composer install
 test:
     override:
         - php vendor/bin/sculpin generate --env=prod
