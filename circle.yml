@@ -1,0 +1,19 @@
+machine:
+    php:
+        version: 5.6.18
+
+dependencies:
+    cache_directories:
+        - "~/.composer"
+    override:
+        - composer install:
+
+test:
+    override:
+        - php vendor/bin/sculpin generate --env=prod
+
+deployment:
+    hub:
+        branch: master
+        commands:
+          - ncftpput -R -v -u "$FTP_USER" -p "$FTP_PWD" www.goetas.com / output_prod/*
