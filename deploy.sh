@@ -1,8 +1,6 @@
 #!/bin/bash
 set -e
-set -x
-
-TARGETFOLDER='/newd'
+TARGETFOLDER='/'
 SOURCEFOLDER='output_prod'
 
 lftp -c "
