@@ -1,6 +1,6 @@
 ---
 layout: project
-title: SOAP Client
+title: SOAP Client - php implementation of SOAP 
 slug: goetas-webservices_soap-client
 categories: ["code"]
 tags: ["php", "xml", "xsd", "wsdl", "soap", "webservices", "open-source"]

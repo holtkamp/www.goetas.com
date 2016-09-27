@@ -1,6 +1,6 @@
 ---
 layout: project
-title: XSD Reader
+title: XSD Reader - read XML schemas pragmatically
 slug: goetas-webservices_xsd-reader
 categories: ["code"]
 tags: ["php", "xml", "xsd", "wsdl", "soap", "webservices", "open-source"]

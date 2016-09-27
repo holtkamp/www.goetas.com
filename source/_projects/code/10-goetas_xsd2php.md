@@ -1,6 +1,6 @@
 ---
 layout: project
-title: XSD to PHP  - Convert XSD into PHP classes
+title: XSD2PHP  - Convert XSD into PHP classes
 slug: xsd2php
 categories: ["code"]
 tags: ["php", "xml", "xsd", "open-source", "serializer", "jms"]

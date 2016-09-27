@@ -1,6 +1,6 @@
 ---
 layout: project
-title: HTML5 for PHP
+title: HTML5-PHP - Manipulate HTML5 using PHP DOM
 slug: masterminds_html5-php
 categories: ["code"]
 tags: ["php", "xml", "html", "html5","dom", "sax-parser", "query-path", "open-source"]

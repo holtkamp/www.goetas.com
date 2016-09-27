@@ -1,6 +1,6 @@
 ---
 layout: project
-title: SOAP Reader
+title: SOAP Reader - read SOAP definitions pragmatically
 slug: goetas-webservices_soap-reader
 categories: ["code"]
 tags: ["php", "xml", "xsd", "wsdl", "soap", "webservices", "open-source"]

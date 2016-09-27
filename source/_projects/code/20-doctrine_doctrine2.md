@@ -1,6 +1,6 @@
 ---
 layout: project
-title: Doctrine 2 Object Relational Mapper
+title: Doctrine 2 - Object Relational Mapper
 slug: doctrine-orm
 categories: ["code"]
 tags: ["php", "orm", "database", "open-source"]

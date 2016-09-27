@@ -1,6 +1,6 @@
 ---
 layout: project
-title: WSDL Reader
+title: WSDL Reader - read WSDL files pragmatically
 slug: goetas-webservices_wsdl-reader
 categories: ["code"]
 tags: ["php", "xml", "xsd", "wsdl", "soap", "webservices", "open-source"]
