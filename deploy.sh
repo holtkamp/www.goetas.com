@@ -1,7 +1,13 @@
-#!/bin/sh
-
+#!/bin/bash
+set -e
 set -x
 
-rm -rf ./output_prod
+TARGETFOLDER='/newd'
+SOURCEFOLDER='output_prod'
 
-./vendor/bin/sculpin generate --env=prod
+lftp -c "
+open $FTP_HOST
+user $FTP_USER $FTP_PWD
+mirror --reverse --delete --verbose $SOURCEFOLDER $TARGETFOLDER
+bye
+"

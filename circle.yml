@@ -4,7 +4,7 @@ machine:
 
 dependencies:
     pre:
-      - sudo apt-get update; sudo apt-get install ncftp -y
+      - sudo apt-get update; sudo apt-get install lftp -y
     cache_directories:
         - "~/.composer"
     override:
@@ -17,4 +17,4 @@ deployment:
     hub:
         branch: master
         commands:
-          - ncftpput -R -v -u "$FTP_USER" -p "$FTP_PWD" www.goetas.com / output_prod/*
+          - ./deploy.sh
