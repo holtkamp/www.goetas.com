@@ -1,6 +1,7 @@
 {% extends "default" %}
 {% block content %}
 {% for post in page.pagination.items %}
+    {% if post.published %}
     <article class="overview">
         <header>
             <h3><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h3>
@@ -36,6 +37,7 @@
             #}
         </footer>
     </article>
+    {% endif %}
 {% endfor %}
 {% if page.pagination.previous_page or page.pagination.next_page %}
 <nav class="margin-top-30">
