@@ -3,9 +3,9 @@ layout: post
 title: The way to the goetas-webservices/client release
 tags: ["php", "xml", "soap", "webservices", "rest"]
 year: 2016
-month: 9
-day: 29
-published: false
+month: 10
+day: 04
+published: true
 summary: After many years of work, finally I have released a fully PHP based SOAP client up to date with the latest best practice.
 tweet: 780742109691248642
 ---
