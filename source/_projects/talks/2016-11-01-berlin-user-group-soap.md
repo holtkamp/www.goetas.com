@@ -29,4 +29,4 @@ Strengths:
 - No WSDL/XSD parsing on production
 - IDE type hinting support
 
-More info are available on the project page https://github.com/goetas-webservices/soap-client](https://github.com/goetas-webservices/soap-client)
+More info are available on the project page [https://github.com/goetas-webservices/soap-client](https://github.com/goetas-webservices/soap-client)
