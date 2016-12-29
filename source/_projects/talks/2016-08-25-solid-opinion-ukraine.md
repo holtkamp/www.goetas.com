@@ -6,7 +6,7 @@ categories: ["talks"]
 tags: ["php", "rest"]
 technologies: ["php", "rest", "xml", "json", "http", "webservices"]
 published: true
-location: Berlin PHP User Group - Germany
+location: Zhytomyr - Ukraine
 year: 2016
 month: 8
 day: 25
@@ -16,3 +16,5 @@ slides: http://slides.com/goetas/rest-api-php-2016#/
 ---
 
 List of best practice to keep in mind while developing an API based on REST principles
+
+presented at [SolidOpinion](http://solidopinion.com/) offices in Zhytomyr (Ukraine).
