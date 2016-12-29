@@ -2,8 +2,17 @@
 {% block content_wrapper %}
     <article>
         <header>
-            <h1>Project: {{ page.title }}</h1>
+            <h1>
+                Project: {{ page.title }}
+                {% if page.location %}
+                <span style="font-weight: normal">{{ page.location }}</span>
+                {% endif %}</h1>
+
+
         </header>
+
+
+
         <div>
             {{ page.blocks.content|raw }}
         </div>
@@ -20,6 +29,12 @@
             Visit the <i class="fa fa-fw fa-github"></i><a href="{{ page.github }}" target="_blank" title="Github page about {{page.title}}">Github project page</a>
         {% endif %}
 
+        {% if page.slides %}
+        <div>
+            Slides available on <a href="{{ page.slides }}" target="_blank" title="Github page about {{page.title}}">{{ page.slides }}</a>
+        </div>
+        {% endif %}
+
         {% if page.previous_post or page.next_post %}
             <nav class="article">
                 <ul>
@@ -33,6 +48,17 @@
             </nav>
         {% endif %}
         </article>
+
+        {% if page.year %}
+        <div class="span2">
+            <small>
+                <time datetime="{{ page.year }}-{{ page.month }}-{{ page.day }}">
+                    <i class="icon-calendar"></i>
+                    {{ page.year }}{% if page.month %}-{{ page.month }}{% endif %}{% if page.day %}-{{ page.day }}{% endif %}
+                </time>
+            </small>
+        </div>
+        {% endif %}
 
         {% if page.tweet %}
         <div data-tweet-id="{{ page.tweet }}" class="twitter-tweet"></div>

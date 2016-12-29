@@ -8,9 +8,12 @@ pagination:
 ---
 {% block title %}{{ page.category |capitalize }} Projects - {{ page.title }}{% endblock %}
 {% block content %}
-<h2>{{ page.category |capitalize }} Projects</h2>
+<h2>{{ page.category |capitalize }}</h2>
 
-Here you can find some {{ page.category }} projects that I'm working on or have worked in the past.
-
+{% if page.category == "talks" %}
+    Here you can find a list of talks I did in the past.
+{% else %}
+    Here you can find some {{ page.category }} projects that I'm working on or have worked in the past.
+{% endif %}
 {{ parent() }}
 {% endblock %}

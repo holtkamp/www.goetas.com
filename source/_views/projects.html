@@ -5,7 +5,13 @@
     <header>
         <h3>
 
-            <a href="{{ site.url }}{{ project.url }}">{{ project.title }}</a>
+            <a href="{{ site.url }}{{ project.url }}">
+                {{ project.title }}
+
+                {% if project.location %}
+                    <br/><span style="font-weight: normal; font-size: small">{{ project.location }}</span>
+                {% endif %}
+            </a>
 
 
             <span class="side-title">
@@ -24,16 +30,37 @@
         <img class="thumb" src="{{ site.url }}{{ project.thumb }}">
         {% endif %}
         {% if project.description %}
-        {{ project.description }}
-        {% else %}
-        {{ project.summary }}
+            {{ project.description }}
+        {% elseif project.summary %}
+            {{ project.summary }}
         {% endif %}
 
 
+
+        {% if project.slides %}
+        <div>
+            <i class="fa fa-fw fa-file-powerpoint-o"></i> <a href="{{ project.slides }}" target="_blank" title="Slides about about {{page.title}}">Slides available here</a>
+        </div>
+        {% endif %}
+
     </p>
+    {% if project.year %}
+    <div>
+        <small>
+            <time datetime="{{ project.year }}-{{ project.month }}-{{ project.day }}">
+                <i class="icon-calendar"></i>
+                {{ project.year }}{% if project.month %}-{{ project.month }}{% endif %}{% if project.day %}-{{ project.day }}{% endif %}
+            </time>
+        </small>
+    </div>
+    {% endif %}
+
+
     {% if project.role %}
     <span class="role"><b>role:</b> {{ project.role }}</span>
     {% endif %}
+
+
     <footer class="small">
         {% if project.meta.tags %}
         <div class="span8">
